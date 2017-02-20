@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{DD1F3DB9-C4CE-4F70-A06F-9630FF067568}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ex</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">c:/opencv/bin</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ex.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ex</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">c:/opencv/bin</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ex.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ex</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">ex.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">ex</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">ex.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">ex</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;.\mini-caffe-example-master\mini-caffe\3rdparty\include\google;.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;.\mini-caffe-example-master\mini-caffe\include;.\mini-caffe-example-master\mini-caffe\3rdparty\include\Opencv\include;.\mini-caffe-example-master\mini-caffe\3rdparty\include\boost_1_61_0;.\mini-caffe-example-master;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CPU_ONLY1;USE_OPENCV;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CPU_ONLY;USE_OPENCV;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;.\mini-caffe-example-master\mini-caffe\3rdparty\include\google;.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;.\mini-caffe-example-master\mini-caffe\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;.\mini-caffe-example-master\mini-caffe\3rdparty\include\google;.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;.\mini-caffe-example-master\mini-caffe\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Debug\libcaffe.lib;gflags_staticd.lib;libglog_staticd.lib;libprotobufd.lib;libopenblas.lib;Shlwapi.lib;opencv_imgcodecs310d.lib;opencv_imgproc310d.lib;opencv_highgui310d.lib;opencv_core310d.lib;opencv_calib3d310d.lib;opencv_objdetect310d.lib;opencv_videoio310d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./mini-caffe-example-master/mini-caffe/3rdparty/lib;./mini-caffe-example-master/mini-caffe/3rdparty/lib/$(Configuration);c:/opencv/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>./Release/ex.lib</ImportLibrary>
+      <ProgramDataBaseFile>./Debug/ex.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;.\mini-caffe-example-master\mini-caffe\3rdparty\include\boost_1_61_0;c:/opencv/include;.\mini-caffe-example-master\mini-caffe\include;.\mini-caffe-example-master;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPU_ONLY;USE_OPENCV;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPU_ONLY;USE_OPENCV;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;.\mini-caffe-example-master\mini-caffe\3rdparty\include\google;.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;.\mini-caffe-example-master\mini-caffe\include;
+%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;.\mini-caffe-example-master\mini-caffe\3rdparty\include\google;.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;.\mini-caffe-example-master\mini-caffe\include;
+%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcaffe.lib;opencv_core310.lib;opencv_imgcodecs310.lib;opencv_imgproc310.lib;opencv_highgui310.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./mini-caffe-example-master/mini-caffe/3rdparty/lib;c:/opencv/lib</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>./Release/ex.lib</ImportLibrary>
+      <ProgramDataBaseFile>./Release/ex.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;.\mini-caffe-example-master\mini-caffe\3rdparty\include\google;.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;.\mini-caffe-example-master\mini-caffe\include;
+%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPU_ONLY;USE_OPENCV;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPU_ONLY;USE_OPENCV;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\google;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;
+.\mini-caffe-example-master\mini-caffe\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\google;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;
+.\mini-caffe-example-master\mini-caffe\include;
+%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;MinSizeRel\libcaffe.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_videostab300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_videoio300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_video300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_superres300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_stitching300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_shape300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_photo300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_objdetect300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_ml300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgproc300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgcodecs300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_highgui300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_hal300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_flann300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_features2d300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_core300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_calib3d300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_videostab300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_videoio300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_video300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_superres300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_stitching300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_shape300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_photo300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_objdetect300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_ml300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgproc300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgcodecs300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_highgui300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_hal300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_flann300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_features2d300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_core300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_calib3d300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_video300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_features2d300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_ml300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_highgui300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_videoio300d.lib;vfw32.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgcodecs300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgproc300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\libjpegd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\libwebpd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\libpngd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\libtiffd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\libjasperd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\IlmImfd.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_flann300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_core300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_hal300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\zlibd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\ippicvmt.lib;gflags.lib;gflags_nothreads.lib;libglog.lib;libprotobuf.lib;libopenblas.lib;Shlwapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+E:/迅雷下载/caffe/mini-caffe-example-master/mini-caffe/3rdparty/lib;
+E:/迅雷下载/caffe/mini-caffe-example-master/mini-caffe/3rdparty/lib/$(Configuration);
+%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>./MinSizeRel/ex.lib</ImportLibrary>
+      <ProgramDataBaseFile>./MinSizeRel/ex.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\google;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;
+.\mini-caffe-example-master\mini-caffe\include;
+%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPU_ONLY;USE_OPENCV;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPU_ONLY;USE_OPENCV;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\google;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;
+.\mini-caffe-example-master\mini-caffe\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\mini-caffe-example-master\mini-caffe\3rdparty\include;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\openblas;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\google;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\gflags;
+.\mini-caffe-example-master\mini-caffe\3rdparty\include\glog;
+.\mini-caffe-example-master\mini-caffe\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;RelWithDebInfo\libcaffe.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_videostab300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_videoio300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_video300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_superres300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_stitching300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_shape300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_photo300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_objdetect300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_ml300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgproc300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgcodecs300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_highgui300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_hal300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_flann300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_features2d300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_core300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_calib3d300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_videostab300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_videoio300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_video300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_superres300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_stitching300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_shape300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_photo300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_objdetect300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_ml300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgproc300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgcodecs300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_highgui300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_hal300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_flann300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_features2d300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_core300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_calib3d300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_video300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_features2d300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_ml300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_highgui300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_videoio300d.lib;vfw32.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgcodecs300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_imgproc300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\libjpegd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\libwebpd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\libpngd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\libtiffd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\libjasperd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\IlmImfd.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_flann300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_core300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\opencv_hal300d.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\zlibd.lib;F:\tools\Opencv3.0\opencv\build\x86\vc12\staticlib\ippicvmt.lib;gflags.lib;gflags_nothreads.lib;libglog.lib;libprotobuf.lib;libopenblas.lib;Shlwapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>./RelWithDebInfo/ex.lib</ImportLibrary>
+      <ProgramDataBaseFile>./RelWithDebInfo/ex.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgMain.cpp" />
+    <ClCompile Include="mfcTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgMain.h" />
+    <ClInclude Include="mfcTest.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ex.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ex.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
