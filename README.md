@@ -1,5 +1,12 @@
-Based on caffe mnist ,could train and reco License-plate-character ;There was a Demo based On EasyPR .https://github.com/liuruoze/EasyPR
 
-Build on Windows
+
+License-plate-character trained and  Recognized  Based on caffe mnist 
+
+##Build on Windows
 vs2015 could be built directly
+
+##Demo Efect
+There was a Demo based On EasyPR .https://github.com/liuruoze/EasyPR
+
+![mahua](mahua-logo.jpg)
 
