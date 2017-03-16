@@ -1,5 +1,4 @@
-License-plate-character trained and  Recognized  Based on caffe mnist 
-There was a Demo based On EasyPR .https://github.com/liuruoze/EasyPR
+License-plate-character trained and  Recognized  Based on caffe mnist .this is a Demo based On EasyPR .https://github.com/liuruoze/EasyPR
 
 - **how to use** 
 Decompress bin.rar to the current path 
